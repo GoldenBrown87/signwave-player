@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Signwave player</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery-2.1.4.min.js"></script>
+		<script> try {$ = jQuery = module.exports;} catch(e) {} </script>
+		<script src="storedMedia.js"></script>
+		<style>
+		
+		.progressAlert {
+			height:100px;
+			width:800px;
+			margin:auto;
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+		}
+		
+		</style>
+		<script>
+		
+			$(document).ready(function(){
+				storedMedia.play();
+			});
+		
+		</script>
+	</head>
+	<body>
+		<div id="playerCanvas"></div>
+	</body>
+</html>
